@@ -547,6 +547,7 @@ html{
     font-family: 'Courier Prime', monospace;
     color: #5F4B32;
     font-size: 1.5rem;
+    border-top:2px dashed #8B4513; 
     border-bottom: 2px dashed #8B4513;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
@@ -560,7 +561,10 @@ html{
     box-shadow: 4px 4px 0 rgba(139, 69, 19, 0.1);
     transition: all 0.3s ease;
 }
-
+.garis{
+    border-bottom: 2px dashed #8B4513;
+    margin-bottom: 1.5rem;
+}
 .pdf-item:hover {
     transform: translateY(-3px);
     box-shadow: 6px 6px 0 rgba(139, 69, 19, 0.2);
@@ -653,4 +657,79 @@ html{
         margin: 0 0 3rem;
 
     }
+}
+
+/*teks*/
+.font-display {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 1.5rem;
+    background: #F8F4E6;
+    border: 2px solid #D2B48C;
+    min-height: 200px;
+    margin: 1rem 0;
+}
+
+.font-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.font-btn {
+    background: #2A3439;
+    color: #F5F0E1;
+    border: 2px solid #D2B48C;
+    padding: 8px 16px;
+    font-family: 'Courier Prime';
+    cursor: pointer;
+    box-shadow: 3px 3px 0 rgba(139, 69, 19, 0.3);
+    transition: all 0.3s;
+}
+
+.font-btn:hover {
+    background: #8B4513;
+    transform: translateY(-2px);
+}
+
+.font-btn.active {
+    background: #8B4513;
+    box-shadow: 1px 1px 0 #2A3439;
+}
+
+.sample-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #5F4B32;
+}
+.font-viewer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #FFF;
+    border: 3px solid #8B4513;
+    box-shadow: 8px 8px 0 #D2B48C;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.retro-frame {
+    background: #FFF;
+    padding: 15px;
+    border: 3px solid #5F4B32;
+    box-shadow: 8px 8px 0 #D2B48C;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.retro-frame img {
+    width: 100%;
+    border: 1px solid #8B4513;
+}
+
+.caption {
+    font-family: 'Courier Prime';
+    color: #5F4B32;
+    margin-top: 10px;
+    text-align: center;
 }
