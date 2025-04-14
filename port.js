@@ -47,3 +47,14 @@ document.querySelector('.retro-form').addEventListener('submit', async (e) => {
         alert("Error: " + error.message);
     }
 });
+
+function changeFont(fontName, genericFamily) {
+    // Update preview
+    document.getElementById('fontPreview').style.fontFamily = `'${fontName}', ${genericFamily}`;
+    
+    // Update active button
+    document.querySelectorAll('.font-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
