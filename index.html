@@ -157,11 +157,11 @@
     </section>
 
     <section class="pdf-upload-section" id="Tugas">
-        <h1>📚 Koleksi Tugas PDF</h1>
+        <h1>📚 Koleksi Tugas </h1>
         
         <!-- Daftar PDF Statis -->
         <div id="pdfListViewer">
-            <h2>Daftar Tugas</h2>
+            <h2>Daftar Tugas File</h2>
             
             <!-- PDF 1 -->
             <div class="pdf-item">
@@ -169,7 +169,49 @@
                 <a href="Analisis_Komponen_Multimedia.pdf" download class="btn-retro">Download PDF</a>
             </div>
 
+            <div class="garis"></div>
+
         </div>
+<!--Teks-->
+        <div class="font-viewer-container">
+            <h1>🎨 Jenis font / teks</h1>
+            
+            <div class="sample-text">Contoh teks:</div>
+            <div class="font-display" id="fontPreview">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789<br>
+                !@#$%^&*()_+-=
+            </div>
+            
+            <div class="sample-text">Pilih Jenis Font:</div>
+            <div class="font-controls">
+                <button class="font-btn active" onclick="changeFont('Courier Prime', 'monospace')">Courier Prime</button>
+                <button class="font-btn" onclick="changeFont('Poppins', 'sans-serif')">Poppins</button>
+                <button class="font-btn" onclick="changeFont('Playfair Display', 'serif')">Playfair</button>
+                <button class="font-btn" onclick="changeFont('Helvetica', 'cursive')">Helvetica</button>
+                <button class="font-btn" onclick="changeFont('Futura', 'serif')">Futura</button>                
+                <button class="font-btn" onclick="changeFont('Comic sans ms', 'serif')">commic sans ms</button>
+                <button class="font-btn" onclick="changeFont('Georgia', 'serif')">Georgia</button>
+                <button class="font-btn" >+</button>
+            </div>
+        </div>
+<!--gambar-->
+        <div class="font-viewer-container">
+            <h2>🖼️ Gambar</h2>
+                
+            <div class="gallery">
+                <!-- Gambar 1 -->
+                <div class="retro-frame">
+                    <img 
+                        src="logo.jpg" 
+                        alt="Logo web"
+                        loading="lazy"
+                    >
+                    <p class="caption">Gambar Logo web</p>
+                </div>
+            </div>
+        </div>    
     </section>
     
     <!--kontak-->
