@@ -36,8 +36,8 @@
             <p>Mahasiswa Teknik Informatika Universitas Riau.</p>
         </div>
         <div class="hero-images">
-            <img src="background.png" alt="Ilustrasi retro">
-            <img src="sketsa.png" alt="Portfolio project" class="sketsa">
+            <img src="gmbr/background.png" alt="Ilustrasi retro">
+            <img src="gmbr/sketsa.png" alt="Portfolio project" class="sketsa">
         </div>
     </section>
 
@@ -188,42 +188,335 @@
             <div class="font-controls">
                 <button class="font-btn active" onclick="changeFont('Courier Prime', 'monospace')">Courier Prime</button>
                 <button class="font-btn" onclick="changeFont('Poppins', 'sans-serif')">Poppins</button>
-                <button class="font-btn" onclick="changeFont('Playfair Display', 'serif')">Playfair</button>
-                <button class="font-btn" onclick="changeFont('Helvetica', 'cursive')">Helvetica</button>
-                <button class="font-btn" onclick="changeFont('Futura', 'serif')">Futura</button>                
-                <button class="font-btn" onclick="changeFont('Comic sans ms', 'serif')">commic sans ms</button>
+                <button class="font-btn" onclick="changeFont('Playfair Display', 'serif')">Playfair Display</button>
+                <button class="font-btn" onclick="changeFont('Helvetica', 'sans-serif')">Helvetica</button>
+                <button class="font-btn" onclick="changeFont('Futura', 'sans-serif')">Futura</button>
+                <button class="font-btn" onclick="changeFont('Comic Sans MS', 'cursive')">Comic Sans MS</button>
                 <button class="font-btn" onclick="changeFont('Georgia', 'serif')">Georgia</button>
-                <button class="font-btn" >+</button>
+                <button class="font-btn" onclick="changeFont('Roboto', 'sans-serif')">Roboto</button>
+                <button class="font-btn" onclick="changeFont('Times New Roman', 'serif')">Times New Roman</button>
+                <button class="font-btn" onclick="changeFont('Open Sans', 'sans-serif')">Open Sans</button>
             </div>
         </div>
 <!--gambar-->
         <div class="font-viewer-container">
             <h2>🖼️ Gambar</h2>
-                
+            
+            <!-- First Row - 5 Images -->
             <div class="gallery">
-                <!-- Gambar 1 -->
-                <div class="retro-frame">
-                    <img 
-                        src="logo.jpg" 
-                        alt="Logo web"
-                        loading="lazy"
-                    >
-                    <p class="caption">Gambar Logo web</p>
+            <!-- Image 1 -->
+            <div class="retro-frame">
+                <img src="gmbr/logo.jpg" alt="Example JPG" loading="lazy">
+                <p class="caption">format .jpg</p>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="retro-frame">
+                <img src="gmbr/ps.jpeg" alt="Example JPEG" loading="lazy">
+                <p class="caption">format .jpeg</p>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="retro-frame">
+                <img src="gmbr/bee.png" alt="Example PNG" loading="lazy">
+                <p class="caption">format .png</p>
+            </div>
+            
+            <!-- Image 4 -->
+            <div class="retro-frame">
+                <img src="gmbr/wind.webp" alt="Example WEBP" loading="lazy">
+                <p class="caption">format .webp</p>
+            </div>
+            
+            <!-- Image 5 -->
+            <div class="retro-frame">
+                <img src="gmbr/gifspeed.gif" alt="Example GIF" loading="lazy">
+                <p class="caption">format .gif</p>
+            </div>
+            </div>
+            
+            <!-- Second Row - 5 Images -->
+            <div class="gallery">
+            <!-- Image 6 -->
+            <div class="retro-frame">
+                <img src="gmbr/tung.bmp" alt="Example BMP" loading="lazy">
+                <p class="caption">format .bmp</p>
+            </div>
+            
+            <!-- Image 7 -->
+            <div class="retro-frame">
+                <img src="gmbr/ada.jpg" alt="Example psd" loading="lazy">
+                <p class="caption">format .psd</p>
+            </div>
+            
+            <!-- Image 8 -->
+            <div class="retro-frame">
+                <img src="gmbr/speed.ico" alt="Example ICO" loading="lazy">
+                <p class="caption">format .ico</p>
+            </div>
+            
+            <!-- Image 9 -->
+            <div class="retro-frame">
+                <img src="gmbr/cat.svg" alt="Example SVG" loading="lazy">
+                <p class="caption">format .svg</p>
+            </div>
+            
+            <!-- Image 10 -->
+            <div class="retro-frame">
+                <img src="gmbr/prabo.avif" alt="Example AVIF" loading="lazy">
+                <p class="caption">format .avif</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="audio-container">
+            <h1>🎵 Format Audio</h1>
+            
+            <!-- Baris Pertama (5 format) -->
+            <div class="audio-grid">
+                <!-- MP3 -->
+                <div class="audio-card">
+                    <div class="audio-title">.MP3</div>
+                    <audio controls>
+                        <source src="audio/1.mp3" type="audio/mpeg">
+                        Browser tidak mendukung audio.
+                    </audio>
+                </div>
+                
+                <!-- WAV -->
+                <div class="audio-card">
+                    <div class="audio-title">.WAV</div>
+                    <audio controls>
+                        <source src="audio/2.mp3" type="audio/wav">
+                    </audio>
+                </div>
+                
+                <!-- OGG -->
+                <div class="audio-card">
+                    <div class="audio-title">.OGG</div>
+                    <audio controls>
+                        <source src="audio/3.mp3" type="audio/ogg">
+                    </audio>
+                </div>
+                
+                <!-- AAC -->
+                <div class="audio-card">
+                    <div class="audio-title">.AAC</div>
+                    <audio controls>
+                        <source src="audio/4.mp3" type="audio/aac">
+                    </audio>
+                </div>
+                
+                <!-- FLAC -->
+                <div class="audio-card">
+                    <div class="audio-title">.FLAC</div>
+                    <audio controls>
+                        <source src="audio/5.mp3" type="audio/flac">
+                    </audio>
                 </div>
             </div>
-        </div> 
-        
-        <div class="font-viewer-container">
-            <h2>Video dan Audio</h2>
+            
+            <!-- Baris Kedua (5 format) -->
+            <div class="audio-grid">
+                <!-- M4A -->
+                <div class="audio-card">
+                    <div class="audio-title">.M4A</div>
+                    <audio controls>
+                        <source src="audio/3.mp3" type="audio/mp4">
+                    </audio>
+                </div>
                 
-            <div class="gallery">
-                <!-- Gambar 1 -->
-                <video width="640" height="360" controls>
-                    <source src="videoplayback.mp4" type="video/mp4" class="video">
-                    Browser kamu tidak mendukung tag video.
-                </video>
+                <!-- OPUS -->
+                <div class="audio-card">
+                    <div class="audio-title">. (tidak suport) </div>
+                    <audio controls>
+                        <source src="audio/sample.opus" type="audio/opus">
+                    </audio>
+                </div>
+                
+                <!-- WMA -->
+                <div class="audio-card">
+                    <div class="audio-title">.WMA</div>
+                    <audio controls>
+                        <source src="audio/3.mp3" type="audio/x-ms-wma">
+                    </audio>
+                </div>
+                
+                <!-- AIFF -->
+                <div class="audio-card">
+                    <div class="audio-title">.AIFF</div>
+                    <audio controls>
+                        <source src="audio/1.mp3" type="audio/aiff">
+                    </audio>
+                </div>
+                
+                <!-- MIDI -->
+                <div class="audio-card">
+                    <div class="audio-title">.MIDI (tidak suport) </div>
+                    <audio controls>
+                        <source src="audio/sample.mid" type="audio/midi">
+                    </audio>
+                </div>
             </div>
-        </div>    
+        </div>
+        
+        <div class="animation-container">
+            <h1>🎬 Koleksi Animasi Populer</h1>
+            
+            
+            <div class="animation-grid">
+                <!-- 1. Adit Sopo Jarwo -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/MQTjPIrVy5E?si=5X0pUa3VSOwUDDfi"  
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Adit Sopo Jarwo</div>
+                        <div class="animation-origin">MD Entertainment</div>
+                    </div>
+                </div>
+                
+                <!-- 2. Battle of Surabaya -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/-3EYqoN_z-g?si=QGWZJuYSgxHlpOHL" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Battle of Surabaya</div>
+                        <div class="animation-origin">MSV Pictures</div>
+                    </div>
+                </div>
+                
+                <!-- 3. Si Juki -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/fWmB3acKpHE?si=UbN1q3PyQUucPxA7"  
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Si Juki</div>
+                        <div class="animation-origin">Faza Meonk</div>
+                    </div>
+                </div>
+                
+                <!-- 4. Riko The Series -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/cjGG2V04U_U?si=PJvYTZXNW51DwEy5"
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Riko The Series</div>
+                        <div class="animation-origin">Bening Studio</div>
+                    </div>
+                </div>
+                
+                <!-- 5. Kiko -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/tSKhqoan5KQ?si=rQHywEhSTE3H2cHZ" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Kiko</div>
+                        <div class="animation-origin">Transinema</div>
+                    </div>
+                </div>
+                <!-- 1. Tom and Jerry -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/t0Q2otsqC4I" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Tom and Jerry</div>
+                        <div class="animation-origin">Hanna-Barbera</div>
+                    </div>
+                </div>
+                
+                <!-- 2. Mickey Mouse -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/BBgghnQF6E4" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Mickey Mouse</div>
+                        <div class="animation-origin">Disney</div>
+                    </div>
+                </div>
+                
+                <!-- 3. SpongeBob -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/8iTRScJCtvs?si=Vu4N84QT9QeSKjW_" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">SpongeBob SquarePants</div>
+                        <div class="animation-origin">Nickelodeon</div>
+                    </div>
+                </div>
+                
+                <!-- 4. Dragon Ball -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/spA6FWEqIhA?si=fHisiGr47WKyG1GM" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Dragon Ball</div>
+                        <div class="animation-origin">Toei Animation</div>
+                    </div>
+                </div>
+                
+                <!-- 5. Rick and Morty -->
+                <div class="animation-card">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/spA6FWEqIhA?si=fHisiGr47WKyG1GM" 
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="animation-info">
+                        <div class="animation-title">Rick and Morty</div>
+                        <div class="animation-origin">Adult Swim</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     
     <!--kontak-->
